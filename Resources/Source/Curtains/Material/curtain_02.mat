@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8557875569258501826
+--- !u!114 &-3147760454342257118
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,7 +16,7 @@ MonoBehaviour:
   hdPluginSubTargetMaterialVersions:
     m_Keys: []
     m_Values: 
---- !u!114 &-7772772214969791026
+--- !u!114 &-1686433741853644222
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DiffusionProfileReferences:
-  - {fileID: 11400000, guid: 4aca4022a8df6ee499e03c1696fd24ee, type: 2}
+  - {fileID: 11400000, guid: 622c952b1d0e9e2479b2d7cb5cd0d43d, type: 2}
   m_MaterialReferences: []
 --- !u!21 &2100000
 Material:
@@ -38,12 +38,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IvyLeaf
+  m_Name: curtain_02
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _DOUBLESIDED_ON
   - _MASKMAP
   - _MATERIAL_FEATURE_SUBSURFACE_SCATTERING
   - _MATERIAL_FEATURE_TRANSMISSION
@@ -52,7 +53,7 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 2225
   stringTagMap:
     MotionVector: User
@@ -75,15 +76,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BASE_COLOR_MAP:
-        m_Texture: {fileID: 2800000, guid: 9c2076afbb2e4ce40a5a1cbdc6ea805e, type: 3}
+        m_Texture: {fileID: 2800000, guid: f58fb4f1597d5244b85f83bd5a852133, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BUMP_MAP:
-        m_Texture: {fileID: 2800000, guid: 79e59faa747463241bbbee2b6c18932e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 27ec7bee4542c3a4f91bc60ec4833716, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 9c2076afbb2e4ce40a5a1cbdc6ea805e, type: 3}
+        m_Texture: {fileID: 2800000, guid: f58fb4f1597d5244b85f83bd5a852133, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -127,19 +128,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _METALNESS_MAP:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 45412838e08f83842a17e148958a763a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9c2076afbb2e4ce40a5a1cbdc6ea805e, type: 3}
+        m_Texture: {fileID: 2800000, guid: f58fb4f1597d5244b85f83bd5a852133, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: 7e5d5d54f7592024da8821de8a6be06c, type: 3}
+        m_Texture: {fileID: 2800000, guid: ae43333970e78604e8fa8c654cbfa17a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 79e59faa747463241bbbee2b6c18932e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 27ec7bee4542c3a4f91bc60ec4833716, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -155,7 +156,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _REFLECTIONS_ROUGHNESS_MAP:
-        m_Texture: {fileID: 2800000, guid: ae2b16f9ffe5a0c4bbe11c04d5193d41, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9dacbd289cdd3ff4abf530ef1ceee972, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -230,8 +231,8 @@ Material:
     - _COAT_WEIGHT: 0
     - _CoatMask: 0
     - _ConservativeDepthOffsetEnable: 0
-    - _CullMode: 2
-    - _CullModeForward: 2
+    - _CullMode: 0
+    - _CullModeForward: 0
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
@@ -239,11 +240,11 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 3.5568025
+    - _DiffusionProfileHash: 2.532248
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DoubleSidedEnable: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
@@ -275,14 +276,14 @@ Material:
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
-    - _METALNESS: 0
+    - _METALNESS: 1
     - _MaterialID: 0
     - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _Mode: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 1
+    - _NormalScale: 0.4
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OcclusionStrength: 1
@@ -294,9 +295,9 @@ Material:
     - _PPDPrimitiveWidth: 1
     - _Parallax: 0.02
     - _PerPixelSorting: 0
-    - _REFLECTIONS_IOR: 1.52
+    - _REFLECTIONS_IOR: 1.4
     - _REFLECTIONS_ROUGHNESS: 1
-    - _REFLECTIONS_WEIGHT: 0.25
+    - _REFLECTIONS_WEIGHT: 1
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
@@ -353,7 +354,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _COAT_COLOR: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: 2.6127943e-18, g: -1.7625765e+22, b: 1.525739e-25, a: -1.2765527e+28}
+    - _DiffusionProfileAsset: {r: 1.0599405e-12, g: 6.8545486e-17, b: -28271858, a: 0.10391304}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -361,7 +362,7 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _REFLECTIONS_COLOR: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _REFLECTIONS_COLOR: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _TRANSPARENCY: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
