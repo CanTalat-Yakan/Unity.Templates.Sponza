@@ -9463,7 +9463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5018537221698215261}
   m_Layer: 0
-  m_Name: Sponza
+  m_Name: UnityEssentials_Environment_Sponza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

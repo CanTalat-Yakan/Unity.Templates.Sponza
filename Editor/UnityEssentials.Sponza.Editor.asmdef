@@ -1,7 +1,9 @@
 {
     "name": "UnityEssentials.Sponza.Editor",
     "rootNamespace": "UnityEssentials",
-    "references": [],
+    "references": [
+        "GUID:0c677762363426746abd6799d82d40b8"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
