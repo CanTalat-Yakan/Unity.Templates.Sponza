@@ -7,7 +7,7 @@ namespace UnityEssentials
     {
         [MenuItem("GameObject/Environment/Sponza", false)]
         private static void SpawnPrefab(MenuCommand menuCommand) =>
-            PrefabSpawnerEditor.Instantiate("UnityEssentials_Environment_Sponza", "Sponza");
+            ResourceLoaderEditor.InstantiatePrefab("UnityEssentials_Environment_Sponza", "Sponza");
     }
 }
 #endif
